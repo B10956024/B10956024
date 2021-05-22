@@ -4,7 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title>           <h1>MIS快餐點餐價格表</h1>  
+    <table border="1">
+        <script language="JavaScript">
+
+        var i,j;
+
+        document.write('<thead>');
+        document.write("<th>"); 
+            document.write("<td>5號餐8元</td>");
+            document.write("<td>4號餐11元</td>");
+            document.write("<td>3號餐14元</td>");
+            document.write("<td>2號餐17元</td>");
+            document.write("<td>1號餐20元</td>");
+        document.write("</th>");
+        document.write('</thead>');
+
+        for (i=3;i<=7;i++){
+        document.write("<tr>");
+        document.write("<td><b>" + i + "</b></td>"); 
+        j = 8;
+        while (j <= 20){
+        document.write("<td class=aa>");
+        document.write(i + "*" + j + "=" + i*j);
+        document.write("</td>");
+        j=j+3;
+        }
+        document.write("<tr>");
+        }
+    </script>
+    </table>
+    </head>
     <style>
         h1 {
             font-size: 36px;
@@ -22,7 +52,7 @@
             border-width: 1px;
         }
 
-        td {
+        .aa {
             border-style: dotted;
             border-width: 1px;
             padding: 10px;
@@ -36,52 +66,17 @@
             font-size: 18px;
         }
 
-        #tableTitle {
+        td{
             font-weight: bolder;
             font-size: 18px;
             color: purple;
-            text-align: center
+            text-align: center;
+            border: dashed 0.5px;
         }
     </style>
-    <script>
-    </script>
-</head>
+<head>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <td></td>
-                <td>5號餐8元</td>
-                <td>4號餐11元</td>
-                <td>3號餐14元</td>
-                <td>2號餐17元</td>
-                <td>1號餐20元</td>
-            </tr>
-        </thead>
-        <tbody>
-            
-
-
-
-
-
-
-
-
-
-
-        </tbody>
-
-
-
-
-
-
-
-
-
-
-    </table>
+    
 </body>
 </html>
